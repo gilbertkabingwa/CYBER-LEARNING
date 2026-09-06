@@ -1,1 +1,2 @@
-hello
+READ.me
+Welcome to the Python folder, where you can view and follow my independent studies about Python and projects

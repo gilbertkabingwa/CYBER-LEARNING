@@ -1,1 +1,2 @@
-hello
+READ.me
+Welcome to the networking folder, where you can view and follow my independent studies about networking and projects

@@ -1,1 +1,2 @@
-hello
+READ.me
+Welcome to the tryhackme folder, where you can view and follow my independent studies about tryhackme and projects
