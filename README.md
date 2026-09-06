@@ -1,2 +1,2 @@
 # CYBER-LEARNING
-Welcome to the cybersecurity portfolio, where you can view my independent study journey, as well as my development and reporting regarding my personal goal.
+Welcome to my cybersecurity portfolio. Here, I showcase my independent study projects, skills development, and technical reporting. My target focus is the integration of Cybersecurity and AI/ML
