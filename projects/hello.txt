@@ -1,2 +1,1 @@
-READ.me
-Welcome to the projects folder, where you can view and follow my independent studies about projects and projects
+Welcome to the projects folder, where you can view and follow all my projects about Cybersecurity + AI/ML
