@@ -1,14 +1,14 @@
-#Normaali chtaracters:
+#Normal chtaracters:
 
-# In Python there's normaalo characters 
+# In Python there's normal characters 
 
-#example A, B, C, 5 9 0, @ ? and so on and a lot of symbols treated as normaali text. 
+#example A, B, C, 5 9 0, @ ? and so on. A lot of symbols treated as normaali text. 
 
 # There are also Special characters that have special meaning, they all start with blacklast and once Python sees those characters, its going to understand immediately "we have to do something extra"
 # They have speciall purpose.
 
 # example:
-# NORMAL character; abc@1889n.com
+# NORMAL character; abc@188\n.com
 
 # SPECIAL character;  \", \' ,  \\  \n , \t
 
