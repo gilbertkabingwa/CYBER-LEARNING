@@ -57,3 +57,12 @@ print("Beautiful lady1\nBeautiful lady2\nBeautiful lady3")
 # Example
 
 print("Beautiful lady1\tBeautiful lady2")
+
+
+
+#Python challenge using print
+
+print("Your Learing Path:")
+print('-Python Basics')
+print("-Data Engineering")
+print("-AI")
