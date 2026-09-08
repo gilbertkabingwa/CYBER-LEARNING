@@ -35,6 +35,3 @@ print("support@datawithgilbert.com")
 print("www.datawithgilbert.com")
 email="@datawithgilbert"
 website="www.datawithgilbert.com"
-
-# Answer:
-print(email)
