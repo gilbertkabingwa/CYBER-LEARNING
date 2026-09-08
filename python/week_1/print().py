@@ -1,5 +1,6 @@
 #What is Print()?
 # Its a built-in python function that display messages on the output screen to communicate with us 
+# Use Cases: Communicate, Show Results Debugg, Test
 
 # Example
 
