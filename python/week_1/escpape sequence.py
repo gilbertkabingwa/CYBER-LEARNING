@@ -63,6 +63,10 @@ print("Beautiful lady1\tBeautiful lady2")
 #Python challenge using print
 
 print("Your Learing Path:")
-print('-Python Basics')
-print("-Data Engineering")
-print("-AI")
+print('\t-Python Basics')
+print("\t-Data Engineering")
+print("\t-AI")
+
+#Other way of doing it
+
+print("Your Learning Path:\n\t-Python Basics\n\t-Data Engineering\n\t-AI")
