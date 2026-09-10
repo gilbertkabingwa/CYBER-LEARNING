@@ -1,9 +1,7 @@
 #What is a data type?
 """a data type is a classification that tells the computer what kind of value a variable holds and what operations can be performed on it"""
 
-"""# Python Data Types – Quick Notes
-
-Python uses **data types** to define what kind of value a variable contains.
+""""Python uses **data types** to define what kind of value a variable contains.
 
 ## 1. String — `str`
 
@@ -130,7 +128,7 @@ number = 10.9
 number = int(number)
 ```
 
-⚠️ Converting `10.9` to `int` gives:
+ Converting `10.9` to `int` gives:
 
 ```text
 10
