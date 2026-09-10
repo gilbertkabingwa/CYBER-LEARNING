@@ -1,9 +1,9 @@
 # WHat is INPUT?
-""" print () dispaly something to users but INPUT() gets something from users.
-It's built-in Python function that stops your program to get user input. 
+#print () dispaly something to users but INPUT() gets something from users.
+#It's built-in Python function that stops your program to get user input. 
 
-Example:
-Input is used almost in any application or website you are interacting with. On of them can be ex. chatgpt. The place where you go and ask something. """
+#Example:
+"""Input is used almost in any application or website you are interacting with. On of them can be ex. chatgpt. The place where you go and ask something. """
 
 # ASk the user to input their name
 input("Enter Your Name:")
@@ -17,6 +17,7 @@ print("You are", name)
 name = input("Enter Your Name:")
 country = "Finland"
 print("You are", name)
+
 """Hard-coded (static) value fixed a piece of data written direclty into your code that never changes at runtime. In this case is 'Finland'. """
 """Dynamic values data entered by the user that can vary each time program runs."""
 name = input("Enter Your Name:")
