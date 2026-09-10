@@ -22,7 +22,7 @@ print(person)
  # Other way
 
 name = str(input("What is your name?:"))
-age = input("Enter you age:")
+age = input("Enter your age:")
 country = "Finland"
 student = input("Are you a student?")
 height = float(input("What is your height?"))
