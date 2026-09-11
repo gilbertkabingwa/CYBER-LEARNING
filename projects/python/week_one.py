@@ -33,7 +33,7 @@ print("My name is", name,"\n"
     student, ", I do study", "\n",
     "My height is", height)
 
-# Fixed way or RRO Way
+# Fixed way or PRO Way
 
 name = input("What is your name?: ")
 age = int(input("Enter your age: "))
