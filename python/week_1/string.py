@@ -11,7 +11,7 @@
 
 # Srting Functions types:
 
-# Types:
+# Type() and STR():
 name = "Gilbert"
 print(type(name))
 # OR
@@ -32,7 +32,7 @@ if len(password)<8:
 # len() counts everything, even spaces.
 # Use Case - Validate Input Length. Prevent value that are too short or too long
 
-# Count:
+# Count():
 text = """
 Gilbert is king
 Gilbert is Boss
@@ -49,3 +49,30 @@ Gilbert is Boss
 Gilbert is nice!"""
 
 print(text.count("!"))
+
+# Transformattions
+# Replace()
+
+# Example:
+price ="12345,6"
+print(price.replace(",","."))
+
+# Replace (old, new) str method, output: str. Swaps part of text with something new.
+# Replace() is not just for changing values, you can also remove unwanted parts by replacing them with an empty string ("")
+
+# Example:
+price ="12345/6"
+print(price.replace("/",""))
+# OR
+price ="€123/45/6"
+print(price.replace("€","").replace("/", " "))
+
+# Chained methods are executed in order from left to right. Each replace() runs on the result of the one before it.
+
+# Challenge
+# Convert the messy phone number into a clean number format wtith digits
+"""+49 (176) 123-4567"""
+
+# Result:
+phone = "+49 (176) 123-4567"
+print(phone.replace("+49 (176) 123-4567","00491761234567"))
