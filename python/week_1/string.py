@@ -76,3 +76,29 @@ print(price.replace("€","").replace("/", " "))
 # Result:
 phone = "+49 (176) 123-4567"
 print(phone.replace("+49 (176) 123-4567","00491761234567"))
+
+# Joing Strings 
+first_name = "Romio"
+last_name = "Julia"
+last_name = first_name + " " + last_name
+print (last_name)
+
+# Other way
+folder = "C:/users/romio/"
+file = "repor.csv"
+full_folder_path = folder + file
+print(full_folder_path)
+# Use Case - Build Paths. Build dynamic using folder and file variables
+
+# f-string
+name = "Romeo"
+age = 34
+is_student = False
+# Old way of printing output
+print("My name is " + name + ", I am " + str(age) + " years old, and student status is " + str(is_student) + ".")
+
+# NEW WAY
+print(f"My name is {name}, I am {age} years old, and student status is {is_student}.")
+
+# By using F-STRING way is shorter, cleaner, it is easier to read.
+
