@@ -102,3 +102,59 @@ print(f"My name is {name}, I am {age} years old, and student status is {is_stude
 
 # By using F-STRING way is shorter, cleaner, it is easier to read.
 
+# SPLIT()
+# SPLIT(separator) str method output: list of strings, breaks a string into smaller parts
+
+#Example:
+info = "2026-10-11,Finland,Helsinki,"
+print(info.split(","))
+
+# STRING REPETITION
+# "String" * number operator output: string, repeats the string multiple times
+
+#exaple 
+print("==" *21)
+print("YES, Im boss. "* 3)
+print("==" *21)
+# Use repeated characters to create clear sections in output
+
+# Indexing & Slicing
+"""(+) Positive index 0 1 2 3 4 5 ..
+# (-) Negative index -5 -4 -3 -2 -1 """
+
+# Example:
+
+# Extract the first charact
+test = "Gilbert"
+print(text[1])
+# OR
+print (text[7])
+# Same on negative indext 
+print (text[-0])
+
+#indexes & Slicing 
+date = "2026-10-10"
+# Extract the year 
+print(date[0:4])
+print(date[:4])
+
+# Extract the mouth
+print(date[5:7])
+
+# Extract the day
+print(date[8:])
+print(date[-2:])
+
+# Use positive indexex if you want to extract part from the lefe side (start) of a string
+# Use Negative indexes if you want to extract part from the right right side (end) of a string
+
+
+# Remove space
+# Whitespace Cleanup
+text = " Gilbert".lstrip()
+print(test)
+
+text = "Gilbert ".rstrip
+print(text)
+
+text = " Gilbert " .strip
