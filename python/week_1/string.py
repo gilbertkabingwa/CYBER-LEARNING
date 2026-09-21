@@ -19,6 +19,8 @@ age = 24
 print(type(age))
 # Python is flexible with data types but watch out! You can change a value's Python will treat it differently 
 
+
+#============================================================================================================================
 # String functions MATH:
 
 # MATH:
@@ -50,6 +52,8 @@ Gilbert is nice!"""
 
 print(text.count("!"))
 
+
+#============================================================================================================================
 # Transformattions
 # Replace()
 
@@ -73,6 +77,8 @@ print(price.replace("€","").replace("/", " "))
 # Convert the messy phone number into a clean number format wtith digits
 """+49 (176) 123-4567"""
 
+
+#============================================================================================================================
 # Result:
 phone = "+49 (176) 123-4567"
 print(phone.replace("+49 (176) 123-4567","00491761234567"))
@@ -90,6 +96,8 @@ full_folder_path = folder + file
 print(full_folder_path)
 # Use Case - Build Paths. Build dynamic using folder and file variables
 
+
+#============================================================================================================================
 # f-string
 name = "Romeo"
 age = 34
@@ -102,6 +110,7 @@ print(f"My name is {name}, I am {age} years old, and student status is {is_stude
 
 # By using F-STRING way is shorter, cleaner, it is easier to read.
 
+#============================================================================================================================
 # SPLIT()
 # SPLIT(separator) str method output: list of strings, breaks a string into smaller parts
 
@@ -118,6 +127,8 @@ print("YES, Im boss. "* 3)
 print("==" *21)
 # Use repeated characters to create clear sections in output
 
+
+#==================================================================================================================================
 # Indexing & Slicing
 """(+) Positive index 0 1 2 3 4 5 ..
 # (-) Negative index -5 -4 -3 -2 -1 """
@@ -148,7 +159,7 @@ print(date[-2:])
 # Use positive indexex if you want to extract part from the lefe side (start) of a string
 # Use Negative indexes if you want to extract part from the right right side (end) of a string
 
-
+#============================================================================================================================
 # Remove space
 # Whitespace Cleanup
 text = " Gilbert".lstrip()
@@ -158,3 +169,78 @@ text = "Gilbert ".rstrip
 print(text)
 
 text = " Gilbert " .strip
+
+# Case Conversions 
+# lower() makes all latters lowercase 
+
+text = "GILBERT"
+print(text.lower())
+
+# Uppercase makes all latters uppercase 
+ 
+text = "gilbert"
+print(text.upper())
+
+#============================================================================================================================
+# PYHTON CHALLENGE
+# CASE  Clean "968-Maria, (DATA Engineer);; 27Y"
+# Orginal data 
+name = "968-Maria"
+role = "( DATA Engineer )"
+age = " ;; 27y  "
+
+# Clean name
+name = name.removeprefix("968-").strip().lower()
+
+#Clean Role
+role = role.strip("()").strip().lower()
+
+#Clean age
+age = age.strip().lstrip(";").strip()
+
+#Display data
+print("Name:", name)
+print("Role:", role)
+print("Age:", age)
+#============================================================================================================================
+
+# SEARCHING
+#============
+
+#Startwith
+"""STARTWITH checjs if the begin with a specific word"""
+
+#example:
+numero = "+345-456-789-000"
+print(numero.startswith("+345"))
+
+#Endswith
+email = "romeo.julia@hotmail.com"
+print(email.endswith("hotmail.com"))
+
+#In
+email = "romeo.julia@hotmail.com"
+print("@" in email)
+
+#FInd
+""" FIND() reruns the starting position of a word in the string"""
+numero1= "+345-456-789-000"
+numero2= "+345-456-789-111"
+numero3= "+345-456-789-222"
+
+print(numero1.find("-"))
+
+#============================================================================================================================
+
+# VALIDATION
+#ISALPHA() checks if the string has only letters
+
+# exmple:
+country = "CANADA"
+print(country.isalpha())
+
+# Isnumeric() checks if the string has only numbers
+numero4="+345-456-789-222"
+print(numero4.isnumeric())
+
+#============================================================================================================================
