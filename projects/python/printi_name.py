@@ -94,7 +94,7 @@ print("Job: ",Job)
 print()
 print("==" *15)
 
-# Challenge 8 — Clean Messy Data
+# Challenge 7 — Clean Messy Data
 
 """name = "   968-Maria   "
 job = " (SECURITY ENGINEER) "
@@ -102,12 +102,107 @@ country = " rWAnDa "
 age = " 27 """
 
 # Clean Data
-name = "   968-Maria   ".strip()
-job = " (SECURITY ENGINEER) ".title()
-country = " rWAnDa ".title()
-age = " 27 ".strip()
+# Clean name
+name = name.strip().removeprefix("968-").title()
 
-print("name:",name)
-print("Job:",job.replace("(","",).replace(")",""))
-print("Country:",country.strip())
-print("age:",age)
+# Clean job
+job = Job.strip("() ").title()
+
+# Clean country
+country = country.strip().title()
+
+# Clean age
+age = int(age.strip())
+
+# Display cleaned data
+print("Name:", name)
+print("Job:", job)
+print("Country:", country)
+print("Age:", age)
+
+print("==" * 15)
+
+# Challenge 8 — Personal Information System
+"""Create a program that asks the user:"""
+
+# Creat title for our profile
+print("=="*15)
+print("     PERSONAL PROFILE")
+print("=="*15)
+print()
+
+# Creating base information 
+name = input("What is your name?:")
+age = int(input("What is your age?:"))
+country = input("Country?:")
+city = input("Enter the city you're from:")
+job = input("What do you do for living?:")
+company = input("In which company do you work for?:")
+food = input("What is your favorite food?:")
+hobby = input("What is your favorite hobby?:")
+
+
+# Display personal information: 
+print("My name is", name)
+print("Age",age)
+print("I'm from", country)
+print("I live in", city)
+print("I work as",job,"for", company)
+print("My favorite food is", food, "and i love eating that food so much")
+print("and my favorite hobby is", hobby)
+
+# Creat the finishing touches
+print()
+print("=="*15)
+print("     PROFILE CREATED ")
+print("=="*15)
+
+# Challenge 9 — Employee Registration System
+
+"""Now lets combine everything we have learned so far. Create a program that registers an employee. The program should ask:"""
+
+# Creat title for our profile
+print("=="*15)
+print("      EMPLOYEE REGISTRATION")
+print("=="*15)
+print()
+
+# Creating base information 
+ID = int(input("Enter employee ID:"))
+name1 = input("Enter first name::")
+name2 = input("Second name:")
+age = int(input("Enter your age:"))
+country = input("Which country are you from?:")
+job = input("What you do for living?:")
+department = input("In which department you work in?:")
+
+
+
+# Display personal information: 
+print("Employee ID:", ID)
+print("Name:",name1, name2)
+print("Age:",age)
+print("Country:", country)
+print("Job:",job)
+print("Department:",department)
+
+# Creat the finishing touches
+print()
+print("=="*15)
+print("    REGISTRATION COMPLETE")
+print("=="*15)
+
+# LEVEL 10 — Realistic Challenge 🔥🔥
+# Challenge 10 — Data Cleaning System
+
+"""Imagine you work as a Junior Data Engineer.
+
+Your company gives you this messy data:
+employee_id = " 968- "
+name = " maria "
+lastname = " KABINGWA "
+age = " 27 "
+job = " (security engineer) "
+country = " rWAnDa " 
+
+Your job is to clean the data."""
