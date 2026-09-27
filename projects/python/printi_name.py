@@ -63,8 +63,8 @@ What year were you born?"""
 
 namy = input("What is your name?: ")
 age = int(input("What year were you born?: "))
-print("Hello Maria")
-print("You are approximately 27 years old")
+print("Hello", namy)
+print("You are approximately", age, "years old")
 print("==" * 40)
 
 # Challenge 6 — Employee Information
@@ -196,8 +196,8 @@ print("=="*15)
 # Challenge 10 — Data Cleaning System
 
 """Imagine you work as a Junior Data Engineer.
-
 Your company gives you this messy data:
+
 employee_id = " 968- "
 name = " maria "
 lastname = " KABINGWA "
@@ -206,3 +206,151 @@ job = " (security engineer) "
 country = " rWAnDa " 
 
 Your job is to clean the data."""
+
+# Let's clean data
+# Creat title:
+
+print("=="*15)
+print("       CLEAN EMPLOYEE DATA")
+print("=="*15)
+print()
+
+# Base information:
+
+employee_id = int(" 968- ".strip("- "))
+first_name = " maria ".strip()
+second_name = " KABINGWA ".strip()
+age = int(" 27 ".strip())
+job = " (security engineer) ".strip("() ")
+country = " rWAnDa ".strip()
+
+
+# Display data
+print("ID:", employee_id)
+print("Name:", first_name.title(), second_name.title())
+print("Age:", age)
+print("Job:",job.title())
+print("Country:",country.title())
+
+# End of result:
+print()
+print("=="*15)
+print("          DATA CLEANED")
+print("=="*15)
+
+# LEVEL 11 — BIG CHALLENGE 🚀
+# Challenge 11 — Cybersecurity User Registration
+
+"""Now let's connect Python to your future cybersecurity direction.
+Build a simple Cybersecurity User Registration System."""
+
+# The program asks:
+"""
+========================================
+      CYBERSECURITY USER REGISTRATION
+========================================
+
+Username:
+Full name:
+Age:
+Country:
+Email:
+Security role:
+Favorite programming language:
+Years of IT experience:"""
+
+# Display information:
+
+# Creat title:
+
+print("=="*15)
+print("        USER PROFILE")
+print("=="*15)
+print()
+
+# Base information:
+
+user_name = input("What's your user name?: ")
+first_name = input("What's your first name?: ")
+last_name = input("What's your last name?: ")
+age = int(input("Enter your age: "))
+country = input("Where you are from?: ")
+email = input("Enter your email: ")
+security_role = input("Enter your security role: ") 
+language = input("What's your favorite programming language?: ")
+experience = input("Enter your years of IT experience: ")
+
+
+# Display data
+print("Username:\t", user_name)
+print("Full name:\t", first_name.title(), last_name.title())
+print("Age:\t\t", age)
+print("Country:\t",country.upper())
+print("Email:\t\t",email)
+print("Security role:\t",security_role)
+print("Languege:\t",language)
+print("IT experience:\t",experience)
+
+# End of result:
+print()
+print("=="*15)
+
+# 🏆 FINAL CHALLENGE — Build Something Yourself
+# Challenge 12 — Personal Cybersecurity Dashboard
+
+""" Create a program that displays something like:
+
+╔══════════════════════════════════════╗
+║       CYBERSECURITY DASHBOARD        ║
+╠══════════════════════════════════════╣
+║ User: Gilbert                        ║
+║ Role: Cybersecurity Student          ║
+║ Country: Rwanda                      ║
+║                                      ║
+║ Python Level: Beginner               ║
+║ Linux Level: Beginner                ║
+║ Networking Level: Beginner           ║
+║                                      ║
+║ Current Goal:                        ║
+║ Become a Cybersecurity Engineer      ║
+╚══════════════════════════════════════╝
+
+But you decide what information goes inside it.
+
+Use everything you've learned so far."""
+
+# Create title:
+
+print("==" * 15)
+print(" CYBERSECURITY DASHBOARD")
+print("==" * 15)
+print()
+
+# Base information:
+
+user_name = input("What's your username?: ")
+role = input("Enter your role: ")
+country = input("Where are you from?: ")
+python_level = input("What's your Python level?: ")
+linux_level = input("What's your Linux level?: ")
+networking_level = input("What's your networking level?: ")
+goal = input("What's your current goal?: ")
+
+# Display data
+
+print("Username:", user_name.title())
+print("Security Role:\t", role.title())
+print("Country:\t", country.title())
+print()
+
+print("Python Level:\t", python_level.title())
+print("Linux Level:\t", linux_level.title())
+print("Networking Level:\t", networking_level.title())
+print()
+
+print("Current Goal:\t", goal.title())
+
+# End of result:
+
+print()
+print("==" * 15)
