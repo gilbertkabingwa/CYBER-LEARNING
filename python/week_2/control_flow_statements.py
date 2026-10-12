@@ -827,8 +827,5 @@ continue skips to the next loop iteration.
 
 return exits the current function and optionally returns a value"""
 
-print()
-print("=="*30)
+
 """Please note that most of this information was generated using AI but filtered through my own words."""
-print()
-print("=="*30)
