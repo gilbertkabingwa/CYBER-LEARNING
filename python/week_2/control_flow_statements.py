@@ -28,25 +28,19 @@ Loop control statements — change how loops behave.
 
 Other flow-control statements — affect execution, such as pass, return, and match.
 
-You should learn these gradually. Start with conditional statements, then loops, and finally the more advanced statements. """
+Lets start with conditional statements, then loops, and finally the more advanced statements. """
 
 # 2. Conditional Statements
 
 """ Conditional statements allow Python to make decisions based on whether a condition is true or false.
-
 The main conditional keywords are:
 
 if
-
 elif
-
 else
 """
-print("==" * 30)
-print()
+
 # 2.1 The if statement
-print("==" * 15)
-print()
 # The if statement executes a block of code only when a specified condition is true.
 
 # Example
@@ -55,9 +49,8 @@ age = 20
 if age >= 18:
     print("You are an adult.")
 
-# Output:
-
-""" You are an adult.
+""" Output:
+ You are an adult.
 
 Let's break down the code:
 
@@ -83,7 +76,6 @@ if age >= 18:
 """Output: nothing.
 
 The condition is false, so Python skips the indented block.
-
 Important: An if statement does not automatically require an else. Sometimes you only want something to happen when a condition is true."""
 
 # Another example
@@ -101,7 +93,7 @@ if account_balance > 0:
         ==                  Equal to                    5 == 5          True
         !=                  Not equal to                5 != 3          True
         >                   Greater than                8 > 4           True
-        >                   Less than                   2 < 7           True
+        <                   Less than                   2 < 7           True
         >=                  Greater than or equal to    5 >= 5          True
         <=                  Less than or equal to       3 <= 5          True
 
@@ -140,11 +132,7 @@ if age = 20:
 
 This is invalid Python syntax. Use == for the comparison. """
 
-print("==" * 30)
-print()
 # 2.3 The else statement
-print("==" * 15)
-print()
 # The else statement executes when the preceding if condition is false.
 
 # Example
