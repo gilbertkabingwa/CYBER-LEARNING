@@ -2,13 +2,13 @@
 
 # Level 4 — Python if and else
 """1. What does else mean?
-You already know that if executes code when a condition is True.
+We already know that if executes code when a condition is True.
 But what happens when the condition is False?
 That's where else comes in.
 - if = if the condition is true, do this.
-- else = otherwise, do this.
-Look at this example:"""
+- else = otherwise, do this."""
 
+#Look at this example:
 account_active = True
 if account_active == True:
     print("Account access allowed.")
@@ -16,15 +16,15 @@ else:
     print("Account access denied.")
 
 """ Because account_active is True, the output is:
-- Output is: Account access allowed.
+- Account access allowed."""
 
-Now change the variable to False:"""
+# Now change the variable to False:
 account_active = True
 if account_active == False:
     print("Account access allowed.")
 else:
     print("Account access denied.")
-# The output becomes:Account access denied.
+# The output is: Account access denied.
 
 """Important: Only one branch runs. If the if condition is true, Python skips else. If the condition is false, Python runs else."""
 
@@ -41,13 +41,11 @@ if entered_password == correct_password:
 else:
     print("Authentication failed.")
 
-
 # With the values shown, the output is: Authentication successful.
-"""If you change entered_password to "Wrong123", the output becomes:"""
-# Output is "Authentication failed."
+"""If you change entered_password to "Wrong123", the output is: Authentication failed."""
 print("==" * 30)
 
-# Your practice challenges
+# Let's do practice challenges
 # Write the code yourself. Use if, else, comparison operators, and print(). You may also use and and or where needed.
 
 # Challenge 1 — Account status
