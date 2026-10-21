@@ -154,3 +154,126 @@ elif risk_score > 50:
     print("Medium risk.")
 else:
     print("Low risk.")
+
+
+# Level 2 — Cybersecurity logic challenges
+
+# Challenge 1: Login security
+
+""" Skills: if, elif, else, and
+A user can log in only if the account is active and the password is correct."""
+
+account_active = True
+password_correct = False
+failed_attempts = 6
+
+if not account_active:
+    print("Account inactive.")
+elif not password_correct and failed_attempts >= 5:
+    print("Account locked.")
+elif not password_correct:
+    print("Incorrect password.")
+else:
+    print("Login successful.")
+
+# Challenge 2: Risk engine
+"""Skills: and, or, not, elif
+Your task:
+1. Predict the output.
+2. Explain why, step by step.
+3. Change only risk_score to 90. What is the new output?
+Don't forget: and is evaluated before or, unless parentheses change the grouping."""
+
+account_active = True
+device_trusted = False
+risk_score = 72
+
+# Study this condition:
+if (not account_active) or (not device_trusted and risk_score > 80):
+    print("Access blocked.")
+elif account_active and (device_trusted or risk_score < 50):
+    print("Access approved.")
+else:
+    print("Additional verification required.")
+
+# Answer:
+""" My first prediced output was "Access approved." was based on (device_truested or risk_score) but when i examed closer, its changed to "Addittional verification required." Because none of else condition could have output right output."""
+# Reason:
+""" Regarding the `if` condition, a specific combination of conditions was requested. Specifically, the requirement was: if `account_active` is not true, OR `device_trusted` is not false, AND `risk_score` is greater than 80, then print "Access blocked." The condition provided did not meet this requirement.
+As for the `elif` condition: the requirement was that if `account_active` is true AND (`device_trusted` is true OR `risk_score` is < 50), then print "Access approved." This condition also did not meet the requirement.
+This leaves the `else` option, which fits the situation well."""
+
+# Challenge 3: Build an access-control system
+
+"""Skills: all current concepts
+Build a system with these rules, in this exact priority order:
+1. Inactive account → "Access denied: inactive account."
+2. Incorrect password → "Access denied: incorrect password."
+3. Risk score greater than 80 and MFA not verified → "MFA required."
+4. Admin account with verified MFA → "Admin access granted."
+5. Any other valid login → "Standard access granted."
+Your task: Write the code using if, elif, and else. Use logical operators where appropriate. Then explain why the first matching condition matters.
+Extra difficulty: After your first solution, change is_admin = True and mfa_verified = True. Predict the output without running it."""
+
+account_active = True
+is_admin = False
+password_correct = True
+risk_score = 85
+mfa_verified = False
+
+if account_active == False:
+    print("Access denied: inactive account.")
+elif password_correct == False:
+    print("Access denied: incorrect password.")
+elif risk_score > 80 and not mfa_verified:
+    print("MFA required.")
+elif is_admin == True and mfa_verified == True:
+    print("access granted.")
+else:
+    print("Standard access granted.")
+
+# Challenge 4: Find the logic bug
+
+""" Skills: debugging, Boolean logic, condition ordering
+A developer writes:
+
+risk_score = 95
+account_active = True
+device_trusted = True
+
+if risk_score > 50:
+    print("Medium risk.")
+elif risk_score > 80:
+    print("High risk.")
+elif not account_active or not device_trusted:
+    print("Access blocked.")
+else:
+    print("Access approved.") 
+
+Your task:
+1. What does the program actually print?
+2. Identify every logical problem you can find.
+3. Rewrite it so that high-risk scores are classified correctly and untrusted devices or inactive accounts are blocked.
+4. Test your corrected code with risk scores 30, 65, and 95."""
+
+# Answer: 
+# 1. Devoloper codes output: Medium risk.
+# 2.
+if not account_active or not device_trusted:
+    print("Access blocked.")
+elif risk_score > 80:
+    print("High risk.")
+elif risk_score > 50:
+    print("Medium risk.")
+else:
+    print("Access approved.")
+
+# 3. 
+if not account_active or not device_trusted:
+    print("Access blocked.")
+elif risk_score > 80:
+    print("High risk.")
+elif risk_score > 50:
+    print("Medium risk.")
+else:
+    print("Access approved.")
