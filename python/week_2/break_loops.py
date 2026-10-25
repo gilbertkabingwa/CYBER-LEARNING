@@ -175,3 +175,42 @@ The output is:
 3
 Finished
 """
+
+# 1. Understand the output step by step
+
+# Here is the code:
+attempt = 1
+
+while attempt <= 3:
+    print("Attempt:", attempt)
+    attempt = attempt + 1
+
+print("Login check complete")
+#The output is: 
+"""
+Attempt: 1
+Attempt: 2
+Attempt: 3
+Login check complete
+
+How Python executes the code
+1. Initialize the counter
+attempt = 1 sets the starting value.
+
+2 Repeat the indented instructions
+Python prints the attempt number, then increases it by one. This happens for attempts 1, 2, and 3.
+
+3. Stop the loop
+After attempt 3, attempt becomes 4. Since 4 <= 3 is false, the loop ends.
+
+4. Print the final message
+print("Login check complete") is not indented, so it runs after the loop finishes. """
+
+
+count = 3
+
+while count == 3:
+    print(count)
+    count = count = count + 1
+
+print("Go!")
